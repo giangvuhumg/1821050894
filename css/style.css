@@ -3,29 +3,27 @@
     box-sizing: border-box;
     color: #666;
 }
-
-
 /* Header/logo tiêu đề */
-
-header {
+header{
     padding: 5px;
     text-align: center;
-    background: #1abc9c;
-    color: white;
-    height: 120px;
+    height: 110px;
+    justify-content: space-around;
+    display: flex;
 }
-
-
+/* Chỉnh logo trong phần header */
+header .logo>img{
+    height: 100%;
+    width: 100%;
+}
 /* Tăng kích thước font chữ cho header */
-
-header h1 {
-    font-size: 40px;
+header .slogan{
+    padding-top: 20px;
+    font-size: 20px;
 }
-
-header h1,
-h2,
-h3 {
-    color: white;
+header .slogan h1{
+    font-size: 40px;
+    color: #20c0c9;
 }
 
 section {
