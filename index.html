@@ -19,20 +19,19 @@
     </header>
     <nav>
         <ul>
-            <li><a data-section="home">HOME</a></li>
-            <li><a data-section="services">SERVICES</a></li>
+            <li><a data-section="home">TRANG CHỦ</a></li>
+            <li><a data-section="services">DỊCH VỤ</a></li>
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropbtn">PRODUCTS</a>
+                <a href="javascript:void(0)" data-section="home" class="dropbtn">PAGES</a>
                 <div class="dropdown-content">
-                    <a data-section="link1">Link 1</a>
-                    <a data-section="link2">Link 2</a>
-                    <a data-section="link3">Link 3</a>
+                    <a data-section="team">ĐỘI NGŨ CHUYÊN GIA</a>
+                    <a data-section="news">TIN TỨC</a>
                 </div>
             </li>
-            <li style="float:right"><a data-section="about">ABOUT US</a></li>
+            <li style="float:right"><a data-section="about">VỀ CHÚNG TÔI</a></li>
         </ul>
     </nav>
-
+    <!-- HOME -->
     <section id="home" class="hideable-section">
         <div class="home-text">
             <h2>WELL COME TO OPTIMA</h2>
@@ -40,10 +39,10 @@
                 tham vấn, trị liệu tâm lý và huấn luyện kỹ năng thực hành xã hội <br>
                 tại Việt Nam
             </p>
-            <a data-section="about" class="btn-about">ABOUT US</a>
+            <a data-section="about" class="btn-about">VỀ CHÚNG TÔI</a>
         </div>
     </section>
-
+    <!-- SERVICES -->
     <section id="services" class="hideable-section">
         <h2>DỊCH VỤ CỦA CHÚNG TÔI</h2>
         <div class="services-container">
@@ -55,7 +54,7 @@
                 </p>
             </div>
             <div class="services-content">
-                <img src="img/giaoduc.png" alt="" srcset="Giáo dục">
+                <img src="img/giaoduc.png" alt="Giáo dục">
                 <h3>TƯ VẤN CHUYÊN SÂU</h3>
                 <p>Món quà tuyệt vời, tinh tế nhất mà bạn có thể tặng cho chính mình,
                     người thân và những người bạn trân quý là giúp cho họ có một đời sống tinh thần khỏe mạnh, tích cực và viên mãn.
@@ -75,7 +74,27 @@
             </div>
        </div>
     </section>
-
+    <section id="intro">
+        <div class="text-intro">
+            <h2>Chào mừng đến với OPTIMA</h2>
+            <p>OPTIMA kết nối bạn với những người lắng nghe quan tâm để được hỗ trợ tinh thần miễn phí</p>
+        </div>
+        <div class="content-intro">
+            <div class="col">
+                <h3>Hãy phát triển theo tiến độ của bạn.</h3>
+                <p>Tham khảo các lời gợi ý và lời khuyên đã được kiểm định trong các hướng dẫn tự lực và con đường phát triển để cảm thấy tốt hơn.</p>
+            </div>
+            <div class="col">
+                <h3>Chat 24/7 miễn phí</h3>
+                <p>Được lắng nghe bởi thính giả tình nguyện và trò chuyện với những người khác hiểu trong phòng trò chuyện hỗ trợ</p>
+            </div>
+            <div class="col">
+                <h3>Trị liệu trực tuyến với chi phí hợp lý</h3>
+                <p>Trị liệu tâm lý trực tuyến bảo mật và tư vấn với các nhà trị liêu tâm lý có giấy phép với $150 mỗi tháng.</p>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT US -->
     <section id="about" class="hideable-section">
         <div class="about-content">
             <div class="img-left">
@@ -96,19 +115,77 @@
             </div>
         </div>
     </section>
-
-    <section id="link1" class="hideable-section">
-        <div>Link1 content</div>
+    <!-- TEAM -->
+    <section id="team" class="hideable-section">
+        <h2>CHUYÊN GIA TƯ VẤN</h2>
+        <div class="wrapper-team">
+            <div class="img-team">
+                <img src="img/teamimg.jpg" alt="Đội ngũ chuyên gia của chúng tôi">
+            </div>
+            <div class="about-team">
+                <h2>ABOUT <strong>OUR TEAM</strong></h2>
+                <p>Phòng khám của chúng tôi là quan hệ đối tác sức khỏe tâm thần tư nhân lớn nhất, 
+                    với đội ngũ Bác sĩ Tâm thần, Nhà Tâm lý và Trị liệu Tâm lý được tuyển chọn cẩn thận trên toàn quốc. 
+                    Chúng tôi chỉ làm việc với các đối tác có kinh nghiệm và năng lực cao, những người chia sẻ các giá trị của chúng tôi.
+                </p>
+                <br>
+                <p>Cố vấn làm việc với các vấn đề cụ thể nảy sinh từ các sự kiện hiện tại trong cuộc sống. 
+                    Có các chuyên khoa khác nhau như tư vấn người mất, tư vấn hôn nhân hoặc quan hệ.
+                </p>
+                <a data-section="about" class="btn-about">VỀ CHÚNG TÔI</a>
+            </div>
+        </div>
+    </section>
+    <!-- NEWS -->
+    <section id="news" class="hideable-section">
+        <div class="news-container">
+            <div class="img-news">
+                <img src="img/blog_post.jpg" alt="Tin tức blogPost">
+            </div>
+            <div class="new">
+                <h2>Cách nói về sức khỏe tâm thần của bạn</h2>
+                <p>Mọi người thỉnh thoảng cảm thấy thấp thỏm, vì vậy, không phải lúc nào cũng dễ dàng biết được khi nào đó là một phần của cuộc sống hàng ngày và khi nào cần tìm kiếm sự trợ giúp.
+                    Trong hầu hết các trường hợp, nó là ngắn hạn và tự điều chỉnh, nhưng đối với một số ít đáng kể thì đây không phải là trường hợp. Đối với những người này,
+                    điều quan trọng là phải tìm cách điều trị giống như bất kỳ tình trạng sức khỏe nào khác của bạn. Ở đây chúng ta cùng nhau thảo luận về sáu dấu hiệu cảnh báo có thể cho thấy rằng đã đến lúc cần tìm kiếm sự trợ giúp từ chuyên gia
+                </p>
+            </div>
+        </div>
+        <div class="news-text">
+            <h2>Bệnh trầm cảm có chữa khỏi được không?</h2>
+            <p>Trầm cảm, giống như nhiều tình trạng sức khỏe tâm thần khác, tuân theo ‘quy tắc một phần ba’: Một phần ba số người mắc bệnh sẽ hồi phục hoàn toàn, 
+                một phần ba sẽ đáp ứng một phần với điều trị và một phần ba sẽ không được hưởng lợi gì từ việc điều trị. Tuổi của bạn, thời gian xuất hiện các triệu chứng, 
+                tiền sử gia đình bị trầm cảm và các khó khăn về sức khỏe thể chất hoặc tinh thần đồng thời có thể ảnh hưởng đến tiên lượng của bạn. Một số nhà nghiên cứu tin rằng có bằng chứng về hiệu ứng "sẹo", trong đó khả năng bị tái phát trầm cảm tăng lên theo số đợt bạn đã mắc phải. 
+                Cũng có nguy cơ tự tử liên quan đến trầm cảm nặng.
+            </p>
+        </div>
     </section>
 
-    <section id="link2" class="hideable-section">
-        <div>Link2 content</div>
-    </section>
-
-    <section id="link3" class="hideable-section">
-        <div>Link3 content</div>
-    </section>
-
-    
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="address">
+            <div class="column">
+                <h2>Địa chỉ</h2>
+                <br>
+                <address>18 Phố Viên, Bắc Từ Liêm, Hà Nội</address>
+            </div>
+            <div class="column">
+                <h2>Liên hệ với chúng tôi</h2>
+                <br>
+                <p>Email : <a href="mailto:optima@yoursite.com">optimaa@yoursite.com</a></p>
+                <br>
+                <p>Phone : <a href="phoneto: +84 91 818 57 34"> +84 91 818 57 34</a></p>     
+            </div>
+            <div class="column">
+                <h2>Phản hồi từ khách hàng</h2>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Enter your email"><br>
+                <textarea name="phanhoi" id="phanhoi" placeholder="Ý kiến của khách hàng"></textarea><br>
+                <input type="button" value="Gửi">
+            </div>
+        </div>
+        <div class="the-end">
+            <p>Copyright © 2020 OPTIMA. All Right Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
